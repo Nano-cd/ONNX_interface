@@ -8,8 +8,8 @@ onnx metadata change/onnx metadata get in python and c++
 
 本项目提供了一套工具，用于在 ONNX 模型文件中嵌入和读取自定义元数据。这在模型部署和版本管理中非常有用，可以确保模型与其使用者（例如，一个动态链接库或可执行文件）之间的版本兼容性。
 
-- **`writer.py` (Python)**: 一个 Python 脚本，用于向现有的 `.onnx` 文件中添加或更新自定义元数据字段，如模型版本、作者和描述等。
-- **`reader.cpp` (C++)**: 一个 C++ 函数，演示了如何使用 ONNX Runtime C++ API 来读取 `.onnx` 文件中的这些自定义元数据。
+- **`onnx_model_define.py` (Python)**: 一个 Python 脚本，用于向现有的 `.onnx` 文件中添加或更新自定义元数据字段，如模型版本、作者和描述等。
+- **`onnx_model_metadata_get.cpp` (C++)**: 一个 C++ 函数，演示了如何使用 ONNX Runtime C++ API 来读取 `.onnx` 文件中的这些自定义元数据。
 
 这个工作流程对于构建健壮的 MLOps（机器学习操作）管道至关重要，它允许您将关键信息直接绑定到模型资产中。
 
